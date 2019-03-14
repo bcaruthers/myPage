@@ -40,7 +40,7 @@
 /* Elements */
 .container_content {
   line-height: 1.5rem;
-  padding: 0 10px;
+  padding: 0 20px;
 }
 
 .photo_profile-img {
@@ -50,8 +50,14 @@
 }
 
 .photo_img {
+  padding: 10px;
+  width: 80%;
 }
 
-.media_video {
+.photo_caption {
+  font-size: 0.8rem;
+}
+
+.video_vid {
 }
 /* Modifiers */
