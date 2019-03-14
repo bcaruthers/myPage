@@ -1,0 +1,15 @@
+/* .blockname, .blockname_element, .blockname_element--modifier */
+
+/* Blocks */
+.footer {
+  background: #4492db;
+  padding: 30px;
+}
+
+/* Elements */
+.footer_heading {
+  color: #fff;
+  text-align: center;
+}
+
+/* Modifiers */
