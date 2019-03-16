@@ -1,15 +1,42 @@
 /* .blockname, .blockname_element, .blockname_element--modifier */
+:root {
+  --primary-color: #4492db;
+  --secondary-color: #026696;
+}
 
 /* Blocks */
 .footer {
-  background: #4492db;
-  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  background: var(--primary-color);
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+}
+
+.tech-bar {
+  display: flex;
+  list-style: none;
+  padding: 0;
 }
 
 /* Elements */
-.footer_heading {
+.footer_copyright {
   color: #fff;
   text-align: center;
 }
 
+.tech-bar_item {
+  color: #fff;
+  text-align: center;
+  font-size: 3rem;
+  text-decoration: none;
+  padding: 0.75rem;
+  margin: 0 0.25rem;
+}
+
 /* Modifiers */
+.tech-bar_item:hover {
+  background: var(--secondary-color);
+  border-radius: 5px;
+}
