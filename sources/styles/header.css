@@ -2,6 +2,7 @@
 :root {
   --primary-color: #4492db;
   --secondary-color: #026696;
+  --text-color: #f8f8ff;
 }
 
 /* Blocks */
@@ -15,9 +16,9 @@
 }
 
 .logo {
-  font-size: 2.5rem;
+  font-size: 4rem;
   letter-spacing: 0.2rem;
-  color: #fff;
+  color: var(--text-color);
   padding: 0;
 }
 
@@ -29,7 +30,8 @@
 
 /* Elements */
 .nav-bar_item {
-  color: #fff;
+  color: var(--text-color);
+  font-size: 1.3rem;
   text-decoration: none;
   padding: 0.75rem;
   margin: 0 0.25rem;
@@ -39,4 +41,23 @@
 .nav-bar_item:hover {
   background: var(--secondary-color);
   border-radius: 5px;
+}
+
+/* Media Queries */
+@media screen and (min-width: 320px) and (max-width: 767px) {
+  .logo {
+    font-size: 2rem;/
+  }
+
+  .nav-bar {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    list-style: none;
+  }
+
+  .nav-bar_item {
+    border-bottom: var(--text-color) 1px dashed;
+    font-size: 1.5rem;
+  }
 }
