@@ -93,3 +93,31 @@
 }
 
 /* Modifiers */
+@keyframes pulse {
+  from {
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+  }
+
+  50% {
+    -webkit-transform: scale3d(1.05, 1.05, 1.05);
+    transform: scale3d(1.05, 1.05, 1.05);
+  }
+
+  to {
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+  }
+}
+
+.container_content:hover {
+  animation-name: pulse;
+  animation-duration: 1s;
+}
+
+@media only screen and(min-width: 768px) {
+  .photo_profile-img {
+    position: absolute;
+    clip-path: polygon(50% 0, 100% 50%, 50% 100%, 0 50%);
+  }
+}
